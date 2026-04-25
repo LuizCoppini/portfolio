@@ -450,7 +450,7 @@ const DATA = {
         },
         {
           type: "image",
-          src: "images/claw2.png",
+          src: `${import.meta.env.BASE_URL}images/claw2.jpg`,
         },
         {
           type: "image",
