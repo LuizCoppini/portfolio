@@ -122,11 +122,11 @@ const T = {
 
 // ─── Category config ──────────────────────────────────────────────────────────
 const CAT_COLORS = {
-  ml:        { accent: "#38bdf8", bg: "#0e1a2b" },
-  robotics:  { accent: "#34d399", bg: "#0d1f1a" },
+  ml: { accent: "#38bdf8", bg: "#0e1a2b" },
+  robotics: { accent: "#34d399", bg: "#0d1f1a" },
   aerospace: { accent: "#a78bfa", bg: "#1a1020" },
-  embedded:  { accent: "#fbbf24", bg: "#1f1505" },
-  mobile:    { accent: "#f472b6", bg: "#1a0f1f" },
+  embedded: { accent: "#fbbf24", bg: "#1f1505" },
+  mobile: { accent: "#f472b6", bg: "#1a0f1f" },
   fullstack: { accent: "#22d3ee", bg: "#0f1a1f" },
 };
 
@@ -179,42 +179,42 @@ const CAT_ICONS_JSX = {
 const CAT_ICONS_FN = {
   robotics: (c) => (
     <svg viewBox="0 0 48 48" width="100%" height="100%" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="14" y="18" width="20" height="18" rx="3"/>
-      <circle cx="19" cy="26" r="2"/><circle cx="29" cy="26" r="2"/>
-      <path d="M19 34v4M29 34v4M24 18v-5M20 13h8M14 24H8M34 24h6"/>
+      <rect x="14" y="18" width="20" height="18" rx="3" />
+      <circle cx="19" cy="26" r="2" /><circle cx="29" cy="26" r="2" />
+      <path d="M19 34v4M29 34v4M24 18v-5M20 13h8M14 24H8M34 24h6" />
     </svg>
   ),
   aerospace: (c) => (
     <svg viewBox="0 0 48 48" width="100%" height="100%" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M24 6l4 14h10l-8 6 3 13-9-6-9 6 3-13-8-6h10z"/>
-      <circle cx="24" cy="24" r="3"/>
+      <path d="M24 6l4 14h10l-8 6 3 13-9-6-9 6 3-13-8-6h10z" />
+      <circle cx="24" cy="24" r="3" />
     </svg>
   ),
   ml: (c) => (
     <svg viewBox="0 0 48 48" width="100%" height="100%" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="12" cy="24" r="3"/><circle cx="36" cy="24" r="3"/>
-      <circle cx="24" cy="12" r="3"/><circle cx="24" cy="36" r="3"/>
-      <circle cx="24" cy="24" r="4"/>
-      <path d="M15 24h5M28 24h5M24 15v5M24 28v5M16 16l5 5M27 27l5 5M32 16l-5 5M21 27l-5 5"/>
+      <circle cx="12" cy="24" r="3" /><circle cx="36" cy="24" r="3" />
+      <circle cx="24" cy="12" r="3" /><circle cx="24" cy="36" r="3" />
+      <circle cx="24" cy="24" r="4" />
+      <path d="M15 24h5M28 24h5M24 15v5M24 28v5M16 16l5 5M27 27l5 5M32 16l-5 5M21 27l-5 5" />
     </svg>
   ),
   embedded: (c) => (
     <svg viewBox="0 0 48 48" width="100%" height="100%" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="14" y="14" width="20" height="20" rx="2"/>
-      <rect x="19" y="19" width="10" height="10" rx="1"/>
-      <path d="M14 20H8M14 28H8M34 20h6M34 28h6M20 14V8M28 14V8M20 34v6M28 34v6"/>
+      <rect x="14" y="14" width="20" height="20" rx="2" />
+      <rect x="19" y="19" width="10" height="10" rx="1" />
+      <path d="M14 20H8M14 28H8M34 20h6M34 28h6M20 14V8M28 14V8M20 34v6M28 34v6" />
     </svg>
   ),
   mobile: (c) => (
     <svg viewBox="0 0 48 48" width="100%" height="100%" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="16" y="6" width="16" height="36" rx="3"/>
-      <path d="M21 38h6M22 10h4"/>
+      <rect x="16" y="6" width="16" height="36" rx="3" />
+      <path d="M21 38h6M22 10h4" />
     </svg>
   ),
   fullstack: (c) => (
     <svg viewBox="0 0 48 48" width="100%" height="100%" fill="none" stroke={c} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="6" y="10" width="36" height="28" rx="2"/>
-      <path d="M6 16h36M18 26l-4 4 4 4M30 26l4 4-4 4M22 36l4-12"/>
+      <rect x="6" y="10" width="36" height="28" rx="2" />
+      <path d="M6 16h36M18 26l-4 4 4 4M30 26l4 4-4 4M22 36l4-12" />
     </svg>
   ),
 };
@@ -229,15 +229,15 @@ const DATA = {
 
   skills: [
     { label: "Python / TensorFlow / PyTorch", category: "ml" },
-    { label: "ROS / ROS2",                    category: "robotics" },
-    { label: "C / C++ Embedded",              category: "embedded" },
-    { label: "RTOS / FreeRTOS",               category: "embedded" },
-    { label: "Control Systems",               category: "robotics" },
-    { label: "React / Node.js",               category: "fullstack" },
-    { label: "Flutter / Dart",                category: "mobile" },
-    { label: "Docker / CI/CD",                category: "fullstack" },
-    { label: "MATLAB / Simulink",             category: "aerospace" },
-    { label: "Computer Vision",               category: "ml" },
+    { label: "ROS / ROS2", category: "robotics" },
+    { label: "C / C++ Embedded", category: "embedded" },
+    { label: "RTOS / FreeRTOS", category: "embedded" },
+    { label: "Control Systems", category: "robotics" },
+    { label: "React / Node.js", category: "fullstack" },
+    { label: "Flutter / Dart", category: "mobile" },
+    { label: "Docker / CI/CD", category: "fullstack" },
+    { label: "MATLAB / Simulink", category: "aerospace" },
+    { label: "Computer Vision", category: "ml" },
   ],
 
   // ── Education ──────────────────────────────────────────────────────────────
@@ -314,49 +314,161 @@ const DATA = {
   projects: [
     {
       id: 1,
-      title: "Autonomous Paraglider Guidance System",
+      title: "Autonomous Rocket Payload Recovery System",
       category: "aerospace",
       year: "2024",
-      types: ["aerospace", "embedded"],
+      types: ["aerospace", "embedded", "AI"],
       description: {
-        en: "Autonomous guidance system for a paraglider using ESP32. Real-time navigation to GPS coordinates with sensor fusion (IMU + GPS) and control via servos.",
-        pt: "Sistema de guiagem autônoma para parapente usando ESP32. Navegação em tempo real até coordenadas GPS com fusão de sensores (IMU + GPS) e controle via servos.",
+        en: "Autonomous paraglider guidance system for rocket payload recovery, utilizing Deep Reinforcement Learning and ESP32-based embedded control.",
+        pt: "Sistema autônomo de guiagem de paraquedas para recuperação de cargas de foguetes, utilizando Deep Reinforcement Learning e controle embarcado com ESP32.",
       },
       details: {
-        en: "This project is the core of my Master's thesis. It implements a fully autonomous guidance system for a paraglider (flexible-wing aircraft) using an ESP32 microcontroller. The goal is the guided recovery of stratospheric balloon payloads.\n\nA complementary filter fuses data from an IMU (MPU-6050) and GPS module to estimate attitude and position in real time. A PID controller computes control commands that drive two servos connected to the paraglider's brake toggles, allowing left/right turns and speed modulation to navigate toward a target GPS coordinate.\n\nA neural network trained offline is being integrated to handle wind disturbances and improve tracking performance beyond what classical PID can achieve in turbulent conditions.",
-        pt: "Este projeto é o núcleo da minha dissertação de mestrado. Implementa um sistema de guiagem autônoma para um parapente usando um microcontrolador ESP32, com o objetivo de recuperar cargas de balões estratosféricos.\n\nUm filtro complementar fusiona dados de IMU (MPU-6050) e GPS para estimar atitude e posição em tempo real. Um controlador PID computa comandos que acionam dois servos conectados aos freios do parapente, permitindo curvas e modulação de velocidade para navegar até uma coordenada GPS alvo.\n\nUma rede neural treinada offline está sendo integrada para lidar com perturbações de vento e melhorar o desempenho em condições turbulentas.",
+        en: "The core of my Master's thesis, this project implements a fully autonomous guidance system for a flexible-wing paraglider. Designed for high-stakes rocket payload recovery, the system manages the transition from high-altitude deployment to precision landing at a target coordinate.\n\nThe architecture uses an ESP32 to process real-time sensor fusion (IMU + GPS). While classical control manages basic stability, a Proximal Policy Optimization (PPO) neural network—trained via Hardware-in-the-Loop (HIL) simulations in JSBSim and FlightGear—is integrated to handle complex wind profiles and non-linear wing dynamics, ensuring energy-efficient trajectory management through a descent cone logic.",
+        pt: "Núcleo da minha dissertação de mestrado, este projeto implementa um sistema de guiagem totalmente autônomo para um parapente de asa flexível. Projetado para a recuperação de cargas úteis de foguetes, o sistema gerencia desde a abertura em alta altitude até o pouso de precisão em uma coordenada alvo.\n\nA arquitetura utiliza um ESP32 para processar fusão sensorial em tempo real (IMU + GPS). Enquanto o controle clássico garante a estabilidade básica, uma rede neural treinada via Proximal Policy Optimization (PPO)—validada através de simulações Hardware-in-the-Loop (HIL) no JSBSim e FlightGear—é integrada para lidar com perfis de vento complexos e dinâmicas não-lineares da asa, garantindo uma trajetória eficiente através da lógica de cone de descida.",
       },
       features: {
         en: [
-          "ESP32 running real-time guidance loop at 50 Hz",
-          "Complementary filter: IMU + GPS sensor fusion",
-          "PID controller for left/right brake actuation",
-          "Neural network integration for wind disturbance rejection",
+          "Real-time guidance loop running on ESP32 (RTOS integrated)",
+          "Advanced Sensor Fusion: Complementary/Kalman filtering for IMU + GPS",
+          "Deep Reinforcement Learning (PPO) for autonomous navigation and wind rejection",
+          "HIL (Hardware-in-the-Loop) validation using JSBSim and FlightGear flight simulators",
+          "Descent Cone Logic for optimized energy and altitude management",
         ],
         pt: [
-          "ESP32 com loop de guiagem em tempo real a 50 Hz",
-          "Filtro complementar: fusão IMU + GPS",
-          "Controlador PID para acionamento dos freios",
-          "Integração de rede neural para rejeição de perturbações de vento",
+          "Loop de guiagem em tempo real no ESP32 com RTOS",
+          "Fusão Sensorial Avançada: Filtro complementar/Kalman para IMU + GPS",
+          "Deep Reinforcement Learning (PPO) para navegação autônoma e rejeição de vento",
+          "Validação HIL (Hardware-in-the-Loop) utilizando simuladores JSBSim e FlightGear",
+          "Lógica de Cone de Descida para gestão otimizada de energia e altitude",
         ],
       },
-      tags: ["ESP32", "C/C++", "GPS", "IMU", "Control Systems"],
+      tags: ["ESP32", "C/C++", "Python", "Reinforcement Learning", "JSBSim", "Control Systems"],
       media: [
-        { type: "placeholder", category: "aerospace" },
-        { type: "placeholder", category: "embedded" },
+        {
+          type: "image",
+          src: "images/rec1.png",
+        },
+        {
+          type: "image",
+          src: "images/rec2.jpeg",
+        },
+        {
+          type: "image",
+          src: "images/rec3.jpeg",
+        },
+        {
+          type: "image",
+          src: "images/rec4.png",
+        },
       ],
       link: "#",
-      github: "#",
+      github: "https://github.com/LuizCoppini/paraglider-autopilot",
     },
     {
       id: 2,
+      title: "Remote-Controlled Aircraft Tug (AeroTank)",
+      category: "embedded",
+      year: "2023",
+      types: ["embedded", "robotics"],
+      description: {
+        en: "Embedded control system for a remote-controlled aircraft tug, used for ground maneuvering of aircraft in hangars and airports.",
+        pt: "Sistema de controle embarcado para rebocador de aeronaves controlado remotamente, utilizado para movimentação em hangares e aeroportos.",
+      },
+      details: {
+        en: "Worked on the development of the electronic and control system for a remote-controlled aircraft tug (AeroTank), used to move aircraft on the ground without the need for traditional towing vehicles.\n\nThe system is based on an STM32 microcontroller responsible for real-time control of motors and actuators, processing inputs from a remote controller and ensuring smooth and safe maneuvering.\n\nResponsibilities included firmware development in C/C++, integration of sensors and motor drivers, and implementation of control logic for precise low-speed movement and stability under load conditions.",
+        pt: "Atuei no desenvolvimento da eletrônica e do sistema de controle de um rebocador de aeronaves controlado remotamente (AeroTank), utilizado para movimentação de aeronaves em solo sem necessidade de tratores convencionais.\n\nO sistema é baseado em um microcontrolador STM32 responsável pelo controle em tempo real de motores e atuadores, processando comandos de um controle remoto e garantindo manobras suaves e seguras.\n\nAs atividades incluíram desenvolvimento de firmware em C/C++, integração de sensores e drivers de motor, e implementação de lógica de controle para movimentação precisa em baixa velocidade e estabilidade sob carga.",
+      },
+      features: {
+        en: [
+          "STM32-based real-time motor and actuator control",
+          "Remote control interface for precise maneuvering",
+          "Control logic for low-speed stability under heavy load",
+          "Integration of sensors and motor drivers",
+        ],
+        pt: [
+          "Controle em tempo real de motores e atuadores com STM32",
+          "Interface de controle remoto para manobras precisas",
+          "Lógica de controle para estabilidade em baixa velocidade sob carga",
+          "Integração de sensores e drivers de motor",
+        ],
+      },
+      tags: ["STM32", "C/C++", "Embedded Systems", "Motor Control", "Robotics"],
+      media: [
+        {
+          type: "image",
+          src: "images/aerotank1.avif",
+        },
+        {
+          type: "youtube",
+          src: "https://video.wixstatic.com/video/44d1cf_a315aaba6aa74cda9d922ff92d838a01/1080p/mp4/file.mp4",
+        },
+        {
+          type: "image",
+          src: "images/aerotank2.avif",
+        },
+        {
+          type: "image",
+          src: "images/aerotank3.avif",
+        },
+      ],
+      link: "https://www.aeromob-industry.com/pt/product-page/aerotank-universal-remote-control-aircraft-tugs",
+      github: "#",
+    },
+    {
+      id: 3,
+      title: "Myoelectric Prosthetic Hand (Claw Mechanism)",
+      category: "embedded",
+      year: "2022",
+      types: ["embedded", "robotics"],
+      description: {
+        en: "Myoelectric-controlled prosthetic hand using muscle signals to drive a claw mechanism.",
+        pt: "Prótese de mão controlada por sinais mioelétricos utilizando sensores musculares para acionar um mecanismo tipo garra.",
+      },
+      details: {
+        en: "Development of a low-cost myoelectric prosthetic hand controlled by muscle activity. The system uses a surface EMG sensor to capture electrical signals generated by muscle contractions.\n\nThe signal is filtered and processed on a microcontroller, which detects activation patterns and translates them into control commands for a servo-driven claw mechanism. The design focuses on simplicity, reliability, and accessibility, using widely available components such as Arduino-compatible hardware.\n\nThe project demonstrates signal acquisition, analog filtering, threshold-based control, and real-time actuation in an embedded system.",
+        pt: "Desenvolvimento de uma prótese de mão de baixo custo controlada por atividade muscular. O sistema utiliza um sensor EMG de superfície para capturar sinais elétricos gerados pela contração muscular.\n\nO sinal é filtrado e processado em um microcontrolador, que detecta padrões de ativação e os traduz em comandos para um mecanismo de garra acionado por servo motor. O projeto foca em simplicidade, confiabilidade e acessibilidade, utilizando componentes amplamente disponíveis.\n\nDemonstra aquisição de sinais, filtragem analógica, controle por limiar e atuação em tempo real em um sistema embarcado.",
+      },
+      features: {
+        en: [
+          "Surface EMG signal acquisition from muscle activity",
+          "Analog filtering and signal conditioning",
+          "Threshold-based control for actuation",
+          "Servo-driven claw mechanism",
+        ],
+        pt: [
+          "Aquisição de sinais EMG de superfície",
+          "Filtragem analógica e condicionamento de sinal",
+          "Controle baseado em limiar",
+          "Mecanismo de garra acionado por servo",
+        ],
+      },
+      tags: ["Arduino", "Embedded Systems", "EMG", "Signal Processing", "Robotics"],
+      media: [
+        {
+          type: "gif",
+          src: "images/claw1.gif",
+        },
+        {
+          type: "image",
+          src: "images/claw2.png",
+        },
+        {
+          type: "image",
+          src: "images/claw3.png",
+        },
+      ],
+      link: "https://projecthub.arduino.cc/luiz_coppini/claw-prosthesis-controlled-by-myoelectric-sensor-8d5111",
+      github: "#",
+    },
+    {
+      id: 4,
       title: "Rocket Telemetry System (10 km Apogee)",
       category: "aerospace",
       year: "2024",
       types: ["aerospace", "embedded"],
       description: {
-        en: "Telemetry system for high-power rockets with up to 10 km apogee. Real-time data transmission (altitude, IMU, GPS) with ground station integration.",
-        pt: "Sistema de telemetria para foguetes de alta potência com apogeu de até 10 km. Transmissão em tempo real de dados (altitude, IMU, GPS) com integração com estação em solo.",
+        en: "Custom avionics and telemetry system for high-power rockets, with real-time transmission of flight data to a ground station.",
+        pt: "Sistema de aviônica e telemetria para foguetes de alta potência, com transmissão em tempo real dos dados de voo para a estação em solo.",
       },
       details: {
         en: "Designed and built a compact avionics board for high-power amateur rockets capable of reaching 10 km altitude. The system logs and transmits altitude (BMP390 barometer), 9-axis IMU data, and GPS coordinates in real time over a LoRa 915 MHz link with 15 km range.\n\nThe embedded firmware runs on an STM32 with FreeRTOS, using a priority-based task scheduler: one task handles sensor acquisition at 100 Hz, another manages radio transmission at 10 Hz, and a third manages SD card logging as a black-box backup. A Python-based ground station decodes packets and plots live telemetry on a map.",
@@ -376,59 +488,63 @@ const DATA = {
           "Estação terrestre Python com plotagem ao vivo no mapa",
         ],
       },
-      tags: ["Embedded", "Telemetry", "LoRa/RF", "C/C++", "FreeRTOS", "STM32"],
+      tags: ["Embedded", "Telemetry", "LoRa/RF", "C/C++", "FreeRTOS", "ESP32"],
       media: [
-        { type: "placeholder", category: "aerospace" },
-        { type: "placeholder", category: "embedded" },
+        {
+          type: "image",
+          src: "images/avionica.png",
+        },
       ],
       link: "#",
       github: "#",
     },
     {
-      id: 3,
-      title: "On-Device Speaker Recognition AI",
+      id: 5,
+      title: "Real-Time Speaker Identification & Fact-Checking Pipeline",
       category: "ml",
       year: "2024",
-      types: ["ml", "embedded"],
+      types: ["ml", "fullstack"],
       description: {
-        en: "Machine learning model for speaker identification using audio features (MFCC, ZCR, energy). Designed for real-time inference and edge deployment.",
-        pt: "Modelo de machine learning para identificação de locutor usando features de áudio (MFCC, ZCR, energia). Projetado para inferência em tempo real e edge.",
+        en: "Real-time speaker identification and transcription pipeline for live political debates, enabling automated fact-checking of statements.",
+        pt: "Pipeline de identificação de locutor e transcrição em tempo real para debates políticos, permitindo verificação automática de informações.",
       },
       details: {
-        en: "Built a speaker recognition pipeline that runs entirely on-device, without any cloud dependency. Audio is captured, pre-processed (noise gate, normalization), and 39-dimensional MFCC feature vectors are extracted per 25 ms frame with 10 ms hop.\n\nA lightweight CNN classifier (< 200 KB) trained on a custom dataset of 10 speakers achieves 96% identification accuracy. The model was quantized to INT8 with TensorFlow Lite Micro and deployed on an ESP32-S3 with PSRAM, achieving inference in under 8 ms per frame — suitable for real-time use cases.",
-        pt: "Pipeline de reconhecimento de locutor que roda inteiramente no dispositivo, sem dependência de nuvem. Áudio é capturado, pré-processado e vetores de features MFCC de 39 dimensões são extraídos por frame de 25 ms.\n\nUm classificador CNN leve (< 200 KB) treinado em dataset customizado de 10 locutores alcança 96% de acurácia. O modelo foi quantizado para INT8 com TensorFlow Lite Micro e implantado em ESP32-S3, alcançando inferência em menos de 8 ms por frame.",
+        en: "This project was designed to process live audio from São Paulo mayoral debates in real time, identifying who is speaking and enabling downstream fact-checking of statements.\n\nThe pipeline captures the debate audio stream and processes it in near real time. Audio segments are transcribed using a speech-to-text model, while a speaker recognition model—trained on curated datasets of candidate voices—classifies the active speaker for each segment.\n\nThe output combines timestamped transcripts with speaker labels, which are then passed to a verification layer that compares statements against external data sources to flag potentially false or misleading claims. The system runs in the cloud to handle real-time processing and scalability during live events.",
+        pt: "Este projeto foi desenvolvido para processar em tempo real o áudio de debates para prefeito de São Paulo, identificando quem está falando e permitindo a verificação automática das declarações.\n\nO pipeline captura o áudio da transmissão e o processa quase em tempo real. Os trechos são transcritos usando um modelo de speech-to-text, enquanto um modelo de reconhecimento de locutor—treinado com datasets das vozes dos candidatos—classifica quem está falando em cada segmento.\n\nA saída combina transcrições com timestamps e identificação de locutor, sendo então utilizada em uma camada de verificação que compara as falas com fontes externas para identificar possíveis informações falsas ou enganosas. O sistema roda em nuvem para suportar processamento em tempo real durante eventos ao vivo.",
       },
       features: {
         en: [
-          "39-dim MFCC features at 25 ms / 10 ms hop",
-          "96% identification accuracy on 10-speaker dataset",
-          "< 200 KB INT8 model — TensorFlow Lite Micro",
-          "< 8 ms inference on ESP32-S3 with PSRAM",
+          "Real-time audio processing from live debate streams",
+          "Speaker identification using trained voice datasets",
+          "Speech-to-text transcription with timestamp alignment",
+          "Pipeline integration for automated fact-checking",
         ],
         pt: [
-          "Features MFCC 39-dim a 25 ms / hop 10 ms",
-          "96% de acurácia em dataset de 10 locutores",
-          "Modelo INT8 < 200 KB — TensorFlow Lite Micro",
-          "< 8 ms de inferência em ESP32-S3 com PSRAM",
+          "Processamento de áudio em tempo real de transmissões ao vivo",
+          "Identificação de locutor com datasets de voz treinados",
+          "Transcrição speech-to-text com alinhamento temporal",
+          "Integração com pipeline de verificação automática de informações",
         ],
       },
-      tags: ["Python", "ML", "Audio Processing", "MFCC", "Edge AI", "TFLite"],
+      tags: ["Python", "Machine Learning", "Speech-to-Text", "Audio Processing", "Streaming"],
       media: [
-        { type: "placeholder", category: "ml" },
-        { type: "placeholder", category: "embedded" },
+        {
+          type: "image",
+          src: "images/speaker.png",
+        },
       ],
       link: "#",
       github: "#",
     },
     {
-      id: 4,
+      id: 6,
       title: "Real-Time YouTube Audio Transcription Pipeline",
       category: "ml",
       year: "2024",
       types: ["ml", "fullstack"],
       description: {
-        en: "Pipeline for real-time transcription of YouTube live streams with concurrent audio capture and processing. Optimized for low latency.",
-        pt: "Pipeline para transcrição em tempo real de lives do YouTube com captura e processamento simultâneos. Otimizado para baixa latência.",
+        en: "Real-time transcription pipeline for YouTube live streams with concurrent audio capture and low-latency processing.",
+        pt: "Pipeline de transcrição em tempo real para lives do YouTube com captura simultânea de áudio e processamento de baixa latência.",
       },
       details: {
         en: "A Python pipeline that captures audio from a live YouTube stream in real time and transcribes it with sub-3-second latency. FFmpeg captures the HLS audio stream into a ring buffer of 2-second chunks. A worker thread passes each chunk to OpenAI Whisper (medium model, int8-quantized with faster-whisper) for transcription.\n\nTranscripts are streamed via WebSocket to a React dashboard that displays them with speaker timestamps and confidence scores. The whole system runs on a single RTX 3060 GPU and processes up to 5 concurrent streams.",
@@ -450,21 +566,23 @@ const DATA = {
       },
       tags: ["Python", "Whisper", "FFmpeg", "WebSocket", "React", "Speech-to-Text"],
       media: [
-        { type: "placeholder", category: "ml" },
-        { type: "placeholder", category: "fullstack" },
+        {
+          type: "image",
+          src: "images/transcription.png",
+        },
       ],
       link: "#",
       github: "#",
     },
     {
-      id: 5,
+      id: 7,
       title: "Computer Vision for Agricultural Drones",
       category: "ml",
       year: "2023",
       types: ["ml", "aerospace"],
       description: {
-        en: "Computer vision system for agricultural drones focused on field monitoring and spraying optimization. Developed in a startup environment.",
-        pt: "Sistema de visão computacional para drones agrícolas focado em monitoramento e otimização de pulverização. Desenvolvido em ambiente de startup.",
+        en: "Computer vision system developed for agricultural drones, focused on field monitoring and assisting spraying operations.",
+        pt: "Sistema de visão computacional para drones agrícolas, focado em monitoramento de campo e apoio à pulverização.",
       },
       details: {
         en: "Developed at an agtech startup, this system processes orthomosaic images from agricultural drones to automatically detect pest and disease outbreaks and generate variable-rate application maps for precision spraying.\n\nA YOLOv8 model was fine-tuned on 8,000 annotated drone images across 5 crop types. The inference pipeline runs on a Jetson Orin Nano co-processor aboard the drone, providing detections at 15 fps. An integration with the flight controller triggers variable-rate spray nozzles in real time based on detected zones.",
@@ -486,21 +604,23 @@ const DATA = {
       },
       tags: ["Computer Vision", "YOLOv8", "Python", "OpenCV", "Jetson", "Drones"],
       media: [
-        { type: "placeholder", category: "ml" },
-        { type: "placeholder", category: "aerospace" },
+        {
+          type: "image",
+          src: "images/agricultural.png",
+        },
       ],
       link: "#",
       github: "#",
     },
     {
-      id: 6,
+      id: 8,
       title: "BI & Data Platform for Retail Chains",
       category: "fullstack",
       year: "2023",
       types: ["fullstack", "ml"],
       description: {
-        en: "Business Intelligence platform with ETL pipelines and dashboards for supermarket chains. Focus on decision support and operational analytics.",
-        pt: "Plataforma de Business Intelligence com pipelines ETL e dashboards para redes de supermercados. Foco em suporte à decisão e analytics operacional.",
+        en: "Business Intelligence platform for supermarket chains, integrating data pipelines and dashboards for operational analysis.",
+        pt: "Plataforma de Business Intelligence para redes de supermercados, integrando pipelines de dados e dashboards para análise operacional.",
       },
       details: {
         en: "End-to-end BI platform built for a group of supermarket chains across Brazil. The ETL pipeline ingests daily sales, inventory and supplier data from heterogeneous ERP systems, transforms it using dbt, and loads it into a PostgreSQL data warehouse. Incremental loads process ~2 M rows/day in under 4 minutes.\n\nThe React frontend offers 15+ interactive chart types with drill-down from chain → store → department → SKU. Automated PDF reports are generated nightly with Puppeteer and emailed to store managers. A predictive module uses a LightGBM model to forecast weekly demand per SKU, reducing stockouts by 18%.",
@@ -522,21 +642,23 @@ const DATA = {
       },
       tags: ["Python", "SQL", "ETL", "React", "dbt", "LightGBM", "PostgreSQL"],
       media: [
-        { type: "placeholder", category: "fullstack" },
-        { type: "placeholder", category: "ml" },
+        {
+          type: "image",
+          src: "images/dashboard.png",
+        },
       ],
       link: "#",
       github: "#",
     },
     {
-      id: 7,
+      id: 9,
       title: "Embedded ML with TensorFlow Lite on ESP32",
       category: "embedded",
       year: "2024",
       types: ["embedded", "ml"],
       description: {
-        en: "Deployment of machine learning models on ESP32 using TensorFlow Lite Micro for on-device inference in constrained environments.",
-        pt: "Deploy de modelos de machine learning em ESP32 usando TensorFlow Lite Micro para inferência embarcada em ambientes restritos.",
+        en: "Deployment of machine learning models on ESP32 using TensorFlow Lite Micro, focusing on running inference under hardware constraints.",
+        pt: "Deploy de modelos de machine learning em ESP32 usando TensorFlow Lite Micro, com foco em inferência sob restrições de hardware.",
       },
       details: {
         en: "A framework and set of reference implementations for deploying trained ML models on ESP32 microcontrollers using TensorFlow Lite Micro (TFLM). The project covers the full pipeline: model training in Python, post-training INT8 quantization, conversion to a C byte array, and integration into an ESP-IDF firmware project.\n\nReference models included: gesture recognition from IMU data (97% accuracy, 12 KB model), keyword spotting from audio (95% accuracy, 45 KB), and anomaly detection for vibration signals. A custom memory allocator was written to work within the 320 KB SRAM limit of the ESP32.",
@@ -565,14 +687,14 @@ const DATA = {
       github: "#",
     },
     {
-      id: 8,
+      id: 10,
       title: "Autonomous Drone Navigation & Control",
       category: "robotics",
       year: "2023",
       types: ["robotics", "embedded"],
       description: {
-        en: "Development of autonomous navigation and control algorithms for drones, including waypoint navigation and stabilization systems.",
-        pt: "Desenvolvimento de algoritmos de navegação e controle autônomo para drones, incluindo navegação por waypoints e sistemas de estabilização.",
+        en: "Development of control and navigation algorithms for autonomous drones, including stabilization and waypoint navigation.",
+        pt: "Desenvolvimento de algoritmos de controle e navegação para drones autônomos, incluindo estabilização e navegação por waypoints.",
       },
       details: {
         en: "Developed a custom flight stack for a quadrotor UAV, implementing attitude estimation, stabilization, and waypoint navigation from scratch. The attitude estimator uses a Mahony complementary filter fusing accelerometer, gyroscope and magnetometer data at 500 Hz.\n\nThe control architecture is a cascaded PID: inner rate loop at 500 Hz, outer attitude loop at 100 Hz, and position loop at 50 Hz. A waypoint sequencer parses mission files and feeds position setpoints. The stack runs on a STM32F7 and communicates with a Raspberry Pi 4 companion computer via UART for high-level mission management and MAVLink telemetry.",
@@ -600,38 +722,66 @@ const DATA = {
       link: "#",
       github: "#",
     },
+    {
+      id: 11,
+      title: "Autonomous Aircraft Tug (Siemens SIMOVE)",
+      category: "robotics",
+      year: "2025",
+      types: ["robotics", "embedded", "aerospace"],
+      description: {
+        en: "Autonomous aircraft tug using Siemens SIMOVE technology for navigation and ground operations in industrial environments.",
+        pt: "Rebocador de aeronaves autônomo utilizando tecnologia Siemens SIMOVE para navegação e operações em ambientes industriais.",
+      },
+      details: {
+        en: "Currently working on the development of an autonomous aircraft tug based on Siemens SIMOVE technology, designed for ground handling operations in airports and industrial environments.\n\nThe system integrates multiple sensing modalities, including LiDAR, RFID and inductive guidance, enabling reliable navigation and positioning without human intervention. The vehicle follows predefined routes and interacts with infrastructure elements for localization and control.\n\nMy role involves development and integration of embedded systems, sensor interfacing, and control logic for safe and precise maneuvering under real operational constraints.",
+        pt: "Atualmente trabalhando no desenvolvimento de um rebocador de aeronaves autônomo baseado na tecnologia Siemens SIMOVE, voltado para operações de solo em aeroportos e ambientes industriais.\n\nO sistema integra múltiplos sensores, incluindo LiDAR, RFID e sensores de indução, permitindo navegação e posicionamento confiáveis sem intervenção humana. O veículo segue rotas predefinidas e interage com a infraestrutura para localização e controle.\n\nMinha atuação envolve desenvolvimento e integração de sistemas embarcados, interface com sensores e implementação de lógica de controle para manobras seguras e precisas em condições reais de operação.",
+      },
+      features: {
+        en: [
+          "Autonomous navigation using Siemens SIMOVE",
+          "Sensor fusion: LiDAR, RFID and inductive guidance",
+          "Route-based navigation with infrastructure interaction",
+          "Embedded system integration for industrial vehicle control",
+        ],
+        pt: [
+          "Navegação autônoma com tecnologia Siemens SIMOVE",
+          "Fusão de sensores: LiDAR, RFID e indução",
+          "Navegação baseada em rotas com interação com infraestrutura",
+          "Integração de sistemas embarcados para controle do veículo",
+        ],
+      },
+      tags: ["Autonomous Systems", "LiDAR", "RFID", "Embedded", "Robotics", "Siemens"],
+      media: [
+        { type: "placeholder", category: "robotics" },
+        { type: "placeholder", category: "embedded" },
+        { type: "placeholder", category: "ml" },
+      ],
+      link: "#",
+      github: "#",
+    }
   ],
 
   competitions: [
     {
-      title: "IEEE Latin American Robotics Competition",
-      year: "2023",
-      result: { en: "3rd Place", pt: "3º Lugar" },
-      category: "robotics",
-      description: {
-        en: "Robotics competition with an autonomous navigation and object manipulation challenge.",
-        pt: "Competição de robótica com desafio de navegação autônoma e manipulação de objetos.",
-      },
-    },
-    {
-      title: "Hackathon Aerospace UFSC",
-      year: "2023",
-      result: { en: "1st Place", pt: "1º Lugar" },
-      category: "aerospace",
-      description: {
-        en: "48-hour challenge to design a telemetry system for nanosatellites.",
-        pt: "Desafio de projeto de sistema de telemetria para nanossatélites em 48 horas.",
-      },
-    },
-    {
-      title: "ICMC Hackathon – ML Track",
-      year: "2022",
-      result: { en: "Finalist", pt: "Finalista" },
+      title: "Renault Transformation Day",
+      year: "2024",
+      result: { en: "1st Place — IS/IT & Digital", pt: "1º Lugar — IS/IT & Digital" },
       category: "ml",
       description: {
-        en: "Development of a predictive model for supply chain optimization.",
-        pt: "Desenvolvimento de modelo preditivo para otimização de supply chain.",
+        en: "National corporate innovation challenge promoted by Renault Group Brazil, evaluating AI and digital transformation solutions. Awarded for developing an AI-based lead qualification system.",
+        pt: "Desafio nacional de inovação corporativa promovido pelo Grupo Renault Brasil, avaliando soluções de IA e transformação digital. Premiado pelo desenvolvimento de um sistema de qualificação de leads baseado em IA.",
       },
+    },
+    {
+      title: "Latin American Space Challenge (LASC)",
+      year: "2025",
+      result: { en: "Multiple Awards (Avionics Team)", pt: "Múltiplos Prêmios (Equipe de Aviônica)" },
+      category: "aerospace",
+      description: {
+        en: "Member of the Kosmos UFSC Joinville rocketry team, working on avionics systems. The team achieved multiple awards at the largest rocket engineering competition in Latin America.",
+        pt: "Integrante da equipe de foguetes Kosmos UFSC Joinville, atuando na área de aviônica. A equipe conquistou múltiplos prêmios na maior competição de engenharia de foguetes da América Latina.",
+      },
+      link: "https://joinville.ufsc.br/2025/11/10/equipe-kosmos-da-ufsc-joinville-conquista-tres-premios-na-maior-competicao-de-foguetes-da-america-latina/",
     },
   ],
 
@@ -1068,9 +1218,13 @@ function EducationSection() {
 }
 
 // ─── Project Card ─────────────────────────────────────────────────────────────
+// ─── Project Card (Atualizado para mostrar a primeira imagem) ─────────────────
 function ProjectCard({ project, onClick }) {
   const lang = useLang();
   const c = CAT_COLORS[project.category] || { accent: "#94a3b8" };
+
+  // Pega a primeira mídia se ela for imagem ou gif
+  const firstImage = project.media?.find(m => m.type === "image" || m.type === "gif");
 
   return (
     <div onClick={onClick} style={{ background: "#0d1117", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 10, overflow: "hidden", display: "flex", flexDirection: "column", transition: "all 0.25s ease", cursor: "pointer" }}
@@ -1078,24 +1232,37 @@ function ProjectCard({ project, onClick }) {
       onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.07)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
     >
       {/* thumbnail */}
-      <div style={{ position: "relative" }}>
-        <ProjectPlaceholder category={project.category} size={170} />
+      <div style={{ position: "relative", height: 170, overflow: "hidden", background: "#060810" }}>
+        {firstImage ? (
+          <img
+            src={firstImage.src}
+            alt={project.title}
+            style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.5s ease" }}
+            // Efeito de zoom suave ao passar o mouse
+            onMouseEnter={e => e.currentTarget.style.transform = "scale(1.05)"}
+            onMouseLeave={e => e.currentTarget.style.transform = "scale(1)"}
+          />
+        ) : (
+          <ProjectPlaceholder category={project.category} size={170} />
+        )}
+
         {/* type icon badges */}
-        <div style={{ position: "absolute", top: 8, right: 8, display: "flex", gap: 4 }}>
+        <div style={{ position: "absolute", top: 8, right: 8, display: "flex", gap: 4, zIndex: 2 }}>
           {(project.types || [project.category]).map((tp, i) => <TypeBadge key={i} type={tp} />)}
         </div>
+
         {/* click hint overlay */}
-        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: 0, transition: "opacity 0.2s", background: `${c.accent}08` }}
+        <div className="hover-overlay" style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: 0, transition: "opacity 0.2s", background: `${c.accent}22`, zIndex: 1 }}
           onMouseEnter={e => e.currentTarget.style.opacity = 1}
           onMouseLeave={e => e.currentTarget.style.opacity = 0}
         >
-          <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: c.accent, background: "rgba(8,11,18,0.8)", padding: "6px 14px", borderRadius: 6, border: `1px solid ${c.accent}44`, backdropFilter: "blur(4px)" }}>
-            {lang === "en" ? "click to expand" : "clique para expandir"}
+          <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 11, color: "#fff", background: "rgba(8,11,18,0.85)", padding: "5px 12px", borderRadius: 4, border: `1px solid ${c.accent}66`, backdropFilter: "blur(4px)" }}>
+            {lang === "en" ? "view details" : "ver detalhes"}
           </span>
         </div>
       </div>
 
-      {/* content */}
+      {/* content (mantenha igual ao que você já tinha abaixo) */}
       <div style={{ padding: "1.1rem 1.3rem", display: "flex", flexDirection: "column", gap: "0.65rem", flex: 1 }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <CategoryBadge category={project.category} />
@@ -1160,7 +1327,7 @@ function CompetitionsSection() {
           const result = comp.result[lang];
           const medal = result.includes("1") || result.toLowerCase().includes("1st") ? "🥇"
             : result.includes("2") || result.toLowerCase().includes("2nd") ? "🥈"
-            : result.includes("3") || result.toLowerCase().includes("3rd") ? "🥉" : "🏅";
+              : result.includes("3") || result.toLowerCase().includes("3rd") ? "🥉" : "🏅";
           return (
             <div key={i} style={{ background: "#0d1117", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 10, padding: "1.5rem", borderLeft: `3px solid ${color.accent}` }}>
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 12 }}>
