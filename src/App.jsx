@@ -346,19 +346,19 @@ const DATA = {
       media: [
         {
           type: "image",
-          src: "images/rec1.png",
+          src: `${import.meta.env.BASE_URL}images/rec1.png`,
         },
         {
           type: "image",
-          src: "images/rec2.jpeg",
+          src: `${import.meta.env.BASE_URL}images/rec2.jpeg`,
         },
         {
           type: "image",
-          src: "images/rec3.jpeg",
+          src: `${import.meta.env.BASE_URL}images/rec3.jpeg`,
         },
         {
           type: "image",
-          src: "images/rec4.png",
+          src: `${import.meta.env.BASE_URL}images/rec4.png`,
         },
       ],
       link: "#",
