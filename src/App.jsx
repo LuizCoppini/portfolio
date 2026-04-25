@@ -1156,7 +1156,7 @@ function NavBar({ active, setActive, lang, setLang }) {
     { id: "projects", label: t.nav.projects },
     { id: "competitions", label: t.nav.competitions },
     { id: "teams", label: t.nav.teams },
-    { id: "seminars", label: t.nav.seminars },
+    //{ id: "seminars", label: t.nav.seminars },
     { id: "contact", label: t.nav.contact },
   ];
 
