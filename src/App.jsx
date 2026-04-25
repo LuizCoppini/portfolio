@@ -12,6 +12,7 @@ const T = {
       education: "Education",
       projects: "Projects",
       competitions: "Competitions",
+      teams: "Teams",
       seminars: "Seminars",
       contact: "Contact",
     },
@@ -57,6 +58,13 @@ const T = {
       overview: "Overview",
       keyFeatures: "Key Features",
     },
+    teams: {
+      label: "// teams",
+      title: "Competition Teams",
+      focus: "Focus",
+      since: "Since",
+      member: "Member",
+    },
     footer: "// always learning",
     speaker: "Speaker",
     attendee: "Attendee",
@@ -68,6 +76,7 @@ const T = {
       education: "Formação",
       projects: "Projetos",
       competitions: "Competições",
+      teams: "Equipes",
       seminars: "Seminários",
       contact: "Contato",
     },
@@ -112,6 +121,13 @@ const T = {
       techStack: "Tecnologias",
       overview: "Visão Geral",
       keyFeatures: "Destaques",
+    },
+    teams: {
+      label: "// equipes",
+      title: "Equipes de Competição",
+      focus: "Foco",
+      since: "Desde",
+      member: "Membro",
     },
     footer: "// sempre aprendendo",
     speaker: "Apresentador",
@@ -222,7 +238,7 @@ const CAT_ICONS_FN = {
 // ─── Data ─────────────────────────────────────────────────────────────────────
 const DATA = {
   name: "Luiz Coppini",
-  email: "luizcoppini@email.com",
+  email: "coppiniluizcoppini@gmail.com",
   linkedin: "https://www.linkedin.com/in/luiz-coppini/",
   github: "https://github.com/LuizCoppini",
   resume: "https://drive.google.com/file/d/1c7_H3eGdaDqHC9xocejEb1LwRu2wieOQ/view",
@@ -368,7 +384,7 @@ const DATA = {
       id: 2,
       title: "Remote-Controlled Aircraft Tug (AeroTank)",
       category: "embedded",
-      year: "2023",
+      year: "2025",
       types: ["embedded", "robotics"],
       description: {
         en: "Embedded control system for a remote-controlled aircraft tug, used for ground maneuvering of aircraft in hangars and airports.",
@@ -576,6 +592,44 @@ const DATA = {
     },
     {
       id: 7,
+      title: "Embedded ML with TensorFlow Lite on ESP32",
+      category: "embedded",
+      year: "2024",
+      types: ["embedded", "ml"],
+      description: {
+        en: "Deployment of machine learning models on ESP32 using TensorFlow Lite Micro, focusing on running inference under hardware constraints.",
+        pt: "Deploy de modelos de machine learning em ESP32 usando TensorFlow Lite Micro, com foco em inferência sob restrições de hardware.",
+      },
+      details: {
+        en: "A framework and set of reference implementations for deploying trained ML models on ESP32 microcontrollers using TensorFlow Lite Micro (TFLM). The project covers the full pipeline: model training in Python, post-training INT8 quantization, conversion to a C byte array, and integration into an ESP-IDF firmware project.\n\nReference models included: gesture recognition from IMU data (97% accuracy, 12 KB model), keyword spotting from audio (95% accuracy, 45 KB), and anomaly detection for vibration signals. A custom memory allocator was written to work within the 320 KB SRAM limit of the ESP32.",
+        pt: "Framework e implementações de referência para implantar modelos ML treinados em microcontroladores ESP32 usando TensorFlow Lite Micro. O projeto cobre o pipeline completo: treinamento em Python, quantização INT8, conversão para array C e integração no firmware ESP-IDF.\n\nModelos de referência: reconhecimento de gestos via IMU (97% de acurácia, 12 KB), keyword spotting de áudio (95%, 45 KB) e detecção de anomalias em sinais de vibração. Um alocador de memória customizado foi escrito para operar dentro do limite de 320 KB SRAM.",
+      },
+      features: {
+        en: [
+          "Full pipeline: training → INT8 quant → ESP32 deploy",
+          "Gesture recognition: 97% accuracy, 12 KB model",
+          "Keyword spotting: 95% accuracy, 45 KB model",
+          "Custom memory allocator for 320 KB SRAM constraint",
+        ],
+        pt: [
+          "Pipeline completo: treino → quant INT8 → deploy ESP32",
+          "Reconhecimento de gestos: 97% acurácia, modelo 12 KB",
+          "Keyword spotting: 95% acurácia, modelo 45 KB",
+          "Alocador de memória para restrição de 320 KB SRAM",
+        ],
+      },
+      tags: ["ESP32", "TinyML", "TensorFlow Lite", "C/C++", "ESP-IDF", "Embedded AI"],
+      media: [
+        {
+          type: "image",
+          src: "images/aiesp32.png",
+        },
+      ],
+      link: "#",
+      github: "#",
+    },
+    {
+      id: 8,
       title: "Computer Vision for Agricultural Drones",
       category: "ml",
       year: "2023",
@@ -613,10 +667,10 @@ const DATA = {
       github: "#",
     },
     {
-      id: 8,
+      id: 9,
       title: "BI & Data Platform for Retail Chains",
       category: "fullstack",
-      year: "2023",
+      year: "2022",
       types: ["fullstack", "ml"],
       description: {
         en: "Business Intelligence platform for supermarket chains, integrating data pipelines and dashboards for operational analysis.",
@@ -650,42 +704,7 @@ const DATA = {
       link: "#",
       github: "#",
     },
-    {
-      id: 9,
-      title: "Embedded ML with TensorFlow Lite on ESP32",
-      category: "embedded",
-      year: "2024",
-      types: ["embedded", "ml"],
-      description: {
-        en: "Deployment of machine learning models on ESP32 using TensorFlow Lite Micro, focusing on running inference under hardware constraints.",
-        pt: "Deploy de modelos de machine learning em ESP32 usando TensorFlow Lite Micro, com foco em inferência sob restrições de hardware.",
-      },
-      details: {
-        en: "A framework and set of reference implementations for deploying trained ML models on ESP32 microcontrollers using TensorFlow Lite Micro (TFLM). The project covers the full pipeline: model training in Python, post-training INT8 quantization, conversion to a C byte array, and integration into an ESP-IDF firmware project.\n\nReference models included: gesture recognition from IMU data (97% accuracy, 12 KB model), keyword spotting from audio (95% accuracy, 45 KB), and anomaly detection for vibration signals. A custom memory allocator was written to work within the 320 KB SRAM limit of the ESP32.",
-        pt: "Framework e implementações de referência para implantar modelos ML treinados em microcontroladores ESP32 usando TensorFlow Lite Micro. O projeto cobre o pipeline completo: treinamento em Python, quantização INT8, conversão para array C e integração no firmware ESP-IDF.\n\nModelos de referência: reconhecimento de gestos via IMU (97% de acurácia, 12 KB), keyword spotting de áudio (95%, 45 KB) e detecção de anomalias em sinais de vibração. Um alocador de memória customizado foi escrito para operar dentro do limite de 320 KB SRAM.",
-      },
-      features: {
-        en: [
-          "Full pipeline: training → INT8 quant → ESP32 deploy",
-          "Gesture recognition: 97% accuracy, 12 KB model",
-          "Keyword spotting: 95% accuracy, 45 KB model",
-          "Custom memory allocator for 320 KB SRAM constraint",
-        ],
-        pt: [
-          "Pipeline completo: treino → quant INT8 → deploy ESP32",
-          "Reconhecimento de gestos: 97% acurácia, modelo 12 KB",
-          "Keyword spotting: 95% acurácia, modelo 45 KB",
-          "Alocador de memória para restrição de 320 KB SRAM",
-        ],
-      },
-      tags: ["ESP32", "TinyML", "TensorFlow Lite", "C/C++", "ESP-IDF", "Embedded AI"],
-      media: [
-        { type: "placeholder", category: "embedded" },
-        { type: "placeholder", category: "ml" },
-      ],
-      link: "#",
-      github: "#",
-    },
+
     {
       id: 10,
       title: "Autonomous Drone Navigation & Control",
@@ -726,7 +745,7 @@ const DATA = {
       id: 11,
       title: "Autonomous Aircraft Tug (Siemens SIMOVE)",
       category: "robotics",
-      year: "2025",
+      year: "2026",
       types: ["robotics", "embedded", "aerospace"],
       description: {
         en: "Autonomous aircraft tug using Siemens SIMOVE technology for navigation and ground operations in industrial environments.",
@@ -783,6 +802,17 @@ const DATA = {
       },
       link: "https://joinville.ufsc.br/2025/11/10/equipe-kosmos-da-ufsc-joinville-conquista-tres-premios-na-maior-competicao-de-foguetes-da-america-latina/",
     },
+    {
+      title: "Nascer 2025 Program — Regional Stage",
+      year: "2025",
+      result: { en: "1st Place (Co-founder)", pt: "1º Lugar (Co-fundador)" },
+      category: "ml",
+      description: {
+        en: "Co-founder of the winning startup at the regional stage of the Nascer 2025 program, an innovation and entrepreneurship initiative supporting early-stage ventures.",
+        pt: "Co-fundador da startup vencedora da etapa regional do programa Nascer 2025, iniciativa de inovação e empreendedorismo voltada ao desenvolvimento de startups.",
+      },
+      link: "https://joinville.ufsc.br/2025/11/05/startup-da-ufsc-joinville-vence-etapa-regional-do-programa-nascer-2025/",
+    }
   ],
 
   seminars: [
@@ -821,6 +851,73 @@ const DATA = {
         en: "Conference on the synergy between classical control theory and reinforcement learning.",
         pt: "Conferência sobre sinergia entre controle clássico e abordagens de aprendizado por reforço.",
       },
+    },
+  ],
+
+  // ── Competition Teams ──────────────────────────────────────────────────────
+  teams: [
+    {
+      name: "Kosmos Rocketry",
+      icon: "🚀",
+      color: "aerospace",
+      since: "2024",
+      university: "UFSC — Campus Joinville",
+      role: { en: "Avionics Engineer", pt: "Engenheiro de Aviônica" },
+      description: {
+        en: "Kosmos Rocketry is the experimental sounding rocket team of UFSC Joinville, building rockets for international competitions. Through competition-grade rockets, workshops and exhibitions, the team advances aerospace engineering technology while training members to solve real problems with limited resources in a multidisciplinary environment.",
+        pt: "A Kosmos Rocketry é a equipe de foguetes experimentais de sondagem da UFSC Joinville, produzindo foguetes para competições internacionais. Por meio dos foguetes e de workshops e exposições, a equipe aprimora tecnologia aeroespacial e forma engenheiros capazes de resolver problemas com recursos limitados em ambiente multidisciplinar.",
+      },
+      focus: {
+        en: ["Avionics & Telemetry", "Flight Dynamics", "Embedded Systems", "Propulsion"],
+        pt: ["Aviônica & Telemetria", "Dinâmica de Voo", "Sistemas Embarcados", "Propulsão"],
+      },
+      achievements: {
+        en: ["Multiple Awards at LASC 2025 — Latin America's largest rocket competition"],
+        pt: ["Múltiplos Prêmios no LASC 2025 — maior competição de foguetes da América Latina"],
+      },
+      link: "https://joinville.ufsc.br/2025/11/10/equipe-kosmos-da-ufsc-joinville-conquista-tres-premios-na-maior-competicao-de-foguetes-da-america-latina/",
+    },
+    {
+      name: "BOTCEM",
+      icon: "🤖",
+      color: "robotics",
+      since: "2023",
+      university: "UFSC — Campus Joinville",
+      role: { en: "Member", pt: "Membro" },
+      description: {
+        en: "BOTCEM is a competitive robotics group specializing in robot competitions, with a focus on electronic circuits, low-level programming, workshops, teamwork and community projects. The team participates in Brazilian robotics championships and promotes knowledge-sharing events.",
+        pt: "BOTCEM é um grupo competitivo de robótica especializado em competições, com foco em circuitos eletrônicos, programação de baixo nível, workshops, trabalho em equipe e projetos comunitários. A equipe participa de campeonatos brasileiros de robótica e promove eventos de disseminação do conhecimento.",
+      },
+      focus: {
+        en: ["Electronic Circuits", "Low-Level Programming", "Robot Control", "Community Projects"],
+        pt: ["Circuitos Eletrônicos", "Programação de Baixo Nível", "Controle de Robôs", "Projetos Comunitários"],
+      },
+      achievements: {
+        en: ["Brazilian Robotics Championship participations", "Workshops and community outreach events"],
+        pt: ["Participações no Campeonato Brasileiro de Robótica", "Workshops e eventos de extensão comunitária"],
+      },
+      link: "#",
+    },
+    {
+      name: "Draconis Drone Design",
+      icon: "🐉",
+      color: "ml",
+      since: "2024",
+      university: "UFSC — Campus Joinville",
+      role: { en: "Member", pt: "Membro" },
+      description: {
+        en: "Draconis Drone Design is a competitive team specializing in the development of autonomous drones, with a strong emphasis on control systems, computer vision, electronics, mathematical modeling and PID control. The team designs and builds custom UAVs for drone racing and autonomous challenge competitions.",
+        pt: "Draconis Drone Design é uma equipe competitiva especializada no desenvolvimento de drones autônomos, com foco em sistemas de controle, visão computacional, eletrônica, modelagem matemática e controle PID. A equipe projeta e constrói VANTs customizados para corridas de drones e competições de desafios autônomos.",
+      },
+      focus: {
+        en: ["Control Systems", "Computer Vision", "PID Control", "Mathematical Modeling"],
+        pt: ["Sistemas de Controle", "Visão Computacional", "Controle PID", "Modelagem Matemática"],
+      },
+      achievements: {
+        en: ["Autonomous drone competitions", "Custom UAV design & development"],
+        pt: ["Competições de drones autônomos", "Projeto e desenvolvimento de VANTs customizados"],
+      },
+      link: "#",
     },
   ],
 };
@@ -1058,6 +1155,7 @@ function NavBar({ active, setActive, lang, setLang }) {
     { id: "education", label: t.nav.education },
     { id: "projects", label: t.nav.projects },
     { id: "competitions", label: t.nav.competitions },
+    { id: "teams", label: t.nav.teams },
     { id: "seminars", label: t.nav.seminars },
     { id: "contact", label: t.nav.contact },
   ];
@@ -1345,6 +1443,108 @@ function CompetitionsSection() {
   );
 }
 
+// ─── Teams ────────────────────────────────────────────────────────────────────
+function TeamsSection() {
+  const lang = useLang();
+  const t = T[lang];
+  const tt = t.teams;
+  return (
+    <section id="teams" style={{ padding: "5rem max(2rem,6vw)", background: "rgba(255,255,255,0.015)" }}>
+      <SectionHeader label={tt.label} title={tt.title} />
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", gap: "1.4rem", marginTop: "2.5rem" }}>
+        {DATA.teams.map((team, i) => {
+          const c = CAT_COLORS[team.color] || { accent: "#94a3b8", bg: "#111" };
+          return (
+            <div key={i} style={{
+              background: "#0d1117",
+              border: `1px solid rgba(255,255,255,0.07)`,
+              borderRadius: 12,
+              overflow: "hidden",
+              display: "flex",
+              flexDirection: "column",
+              transition: "all 0.25s ease",
+            }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = `${c.accent}44`; e.currentTarget.style.transform = "translateY(-3px)"; e.currentTarget.style.boxShadow = `0 12px 32px ${c.accent}12`; }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.07)"; e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; }}
+            >
+              {/* header strip */}
+              <div style={{
+                padding: "1.4rem 1.5rem 1.2rem",
+                background: `linear-gradient(135deg, ${c.bg} 0%, #0d1117 100%)`,
+                borderBottom: `1px solid ${c.accent}22`,
+                position: "relative",
+                overflow: "hidden",
+              }}>
+                {/* grid bg */}
+                <div style={{ position: "absolute", inset: 0, backgroundImage: `linear-gradient(${c.accent}10 1px, transparent 1px), linear-gradient(90deg, ${c.accent}10 1px, transparent 1px)`, backgroundSize: "18px 18px" }} />
+                <div style={{ position: "absolute", top: 0, left: 0, width: 36, height: 3, background: c.accent }} />
+                <div style={{ position: "relative", display: "flex", alignItems: "center", gap: "0.9rem" }}>
+                  <div style={{
+                    width: 52, height: 52, borderRadius: 10,
+                    background: `${c.accent}18`, border: `2px solid ${c.accent}44`,
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    fontSize: 26, flexShrink: 0,
+                    boxShadow: `0 0 16px ${c.accent}22`,
+                  }}>{team.icon}</div>
+                  <div>
+                    <h3 style={{ fontFamily: "'Syne',sans-serif", fontWeight: 800, fontSize: "1.1rem", color: "#f1f5f9", margin: "0 0 0.25rem", lineHeight: 1.2 }}>{team.name}</h3>
+                    <p style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 11, color: c.accent, margin: 0, letterSpacing: "0.04em" }}>{team.university}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* body */}
+              <div style={{ padding: "1.2rem 1.5rem", display: "flex", flexDirection: "column", gap: "0.9rem", flex: 1 }}>
+                {/* role + since row */}
+                <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                  <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10, color: c.accent, border: `1px solid ${c.accent}44`, borderRadius: 4, padding: "2px 8px", background: `${c.accent}12`, textTransform: "uppercase", letterSpacing: "0.07em" }}>
+                    {team.role[lang]}
+                  </span>
+                  <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10, color: "#475569", border: "1px solid #21262d", borderRadius: 4, padding: "2px 8px", background: "#161b22" }}>
+                    {tt.since} {team.since}
+                  </span>
+                </div>
+
+                {/* description */}
+                <p style={{ color: "#64748b", fontSize: "0.85rem", margin: 0, lineHeight: 1.7 }}>
+                  {team.description[lang]}
+                </p>
+
+                {/* focus areas */}
+                <div>
+                  <p style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10, color: "#475569", textTransform: "uppercase", letterSpacing: "0.08em", margin: "0 0 0.5rem" }}>{tt.focus}</p>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 5 }}>
+                    {team.focus[lang].map((f, j) => (
+                      <span key={j} style={{ fontSize: 10, fontFamily: "'JetBrains Mono',monospace", color: "#475569", background: "#161b22", border: "1px solid #21262d", borderRadius: 4, padding: "2px 7px" }}>{f}</span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* achievements */}
+                <div style={{ marginTop: "auto", paddingTop: "0.5rem" }}>
+                  {team.achievements[lang].map((a, j) => (
+                    <div key={j} style={{ display: "flex", alignItems: "flex-start", gap: 8, marginBottom: 5 }}>
+                      <span style={{ color: c.accent, fontSize: 11, marginTop: 1, flexShrink: 0 }}>▸</span>
+                      <span style={{ color: "#94a3b8", fontSize: "0.8rem", lineHeight: 1.5 }}>{a}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* link */}
+                {team.link && team.link !== "#" && (
+                  <a href={team.link} target="_blank" rel="noopener noreferrer" style={{ color: c.accent, fontSize: 11, fontFamily: "'JetBrains Mono',monospace", textDecoration: "none", letterSpacing: "0.04em" }}>
+                    {lang === "en" ? "learn more →" : "saiba mais →"}
+                  </a>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
 // ─── Seminars ─────────────────────────────────────────────────────────────────
 function SeminarsSection() {
   const lang = useLang();
@@ -1411,7 +1611,7 @@ export default function App() {
   const [activeSection, setActiveSection] = useState("about");
 
   useEffect(() => {
-    const ids = ["about", "education", "projects", "competitions", "seminars", "contact"];
+    const ids = ["about", "education", "projects", "competitions", "teams", "seminars", "contact"];
     const obs = ids.map(id => {
       const el = document.getElementById(id);
       if (!el) return null;
@@ -1434,7 +1634,7 @@ export default function App() {
         <EducationSection />
         <ProjectsSection />
         <CompetitionsSection />
-        <SeminarsSection />
+        <TeamsSection />
         <ContactSection />
         <Footer />
       </div>
